@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CLIP.HOSTING | Signup Confirmation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #dbeafe, #e0e7ff);
+    }
+
+    .confirmation-container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #1f2937;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #4f46e5;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #4338ca;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-container" role="alert" aria-live="polite">
+    <h1>Signup Successful! 🎉</h1>
+    <p>Your account has been created. You can now log in and start using CLIP.HOSTING.</p>
+    <a href="/auth/login.html">Go to Login</a>
+  </div>
+</body>
+</html>
